@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="output"><source path="C:\Users\santidoo\.android\build-cache\7cce32133d16895e32ca0fbb648b3582658baf4a\output\assets"/></dataSet><dataSet config="main"><source path="C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\assets"/><source path="C:\Users\santidoo\StudioProjects\AppSaldo\app\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="C:\Users\santidoo\StudioProjects\AppSaldo\app\src\debug\assets"/></dataSet></merger>

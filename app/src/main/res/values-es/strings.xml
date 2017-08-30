@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">Saldo</string>
+
+    <string name="title_activity_main">Saldo</string>
+    <string name="no_sim">Para comprobar tu saldo debes introducir primero la tarjeta SIM</string>
+    <string name="alert_title_try_again">¿Intentarlo de nuevo?</string>
+    <string name="alert_message">Lo sentimos, pero su compañía de teléfono no está soportada todavía. Envíame el nombre de tu operadora y lo actualizaré para la siguiente versión.</string>
+    <string name="alert_message_try_again">El método por defecto no ha funcionado. Desea intentar otro método?</string>
+    <string name="alert_no">No gracias!</string>
+    <string name="chooser_title">Enviar correo electrónico</string>
+    <string name="email_body">Complete la siguiente información:\n- País: \n- Compañía telefónica: \n\nSabes el código USSD?\nCódigo: \n</string>
+
+</resources>

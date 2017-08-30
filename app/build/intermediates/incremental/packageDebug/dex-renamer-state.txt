@@ -1,0 +1,7 @@
+#Wed Aug 30 17:22:53 CEST 2017
+base.0=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_46e2638d6825e3e5d50ce43e1f87396f65c49b2d
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_0cefc33b622ba1520e991ef86a8c812dc8889b7e\\classes.dex
+base.1=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_0cefc33b622ba1520e991ef86a8c812dc8889b7e
+file.0=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_46e2638d6825e3e5d50ce43e1f87396f65c49b2d\\classes.dex

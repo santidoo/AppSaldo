@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alert_message">Wygląda na to, że nie mamy danych Twojego operatora sieci komórkowej. Czy chcesz przesłać Nam Twoje dane ?</string>
+    <string name="alert_message_try_again">Domyślna metoda nie powiodła się. Chcesz spróbować innej?</string>
+    <string name="alert_no">Nie, dziekuję!</string>
+    <string name="alert_title_try_again">Spróbuj ponownie?</string>
+    <string name="app_name">Saldo</string>
+    <string name="chooser_title">Wyślij e-mail</string>
+    <string name="email_body">Proszę uzupełnij poniższe informacje:\n- Kraj: \n- Sieć komórkowa: \n\nI jeśli znasz, USSD kod?\nKod: \n</string>
+    <string name="no_sim">Umieść karte SIM w telefonie i spróbuj ponownie!</string>
+    <string name="title_activity_main">Saldo</string>
+</resources>

@@ -1,0 +1,95 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:2:1-50:12
+	package
+		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:3:5-29
+		INJECTED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:4:5-29
+		INJECTED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:23.0.0] C:\Users\santidoo\.android\build-cache\7cce32133d16895e32ca0fbb648b3582658baf4a\output\AndroidManifest.xml:20:5-43
+	android:targetSdkVersion
+		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:8:9-35
+		INJECTED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.CALL_PHONE
+ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:11:5-69
+	android:name
+		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:11:22-66
+uses-permission#android.permission.SEND_SMS
+ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:12:5-67
+	android:name
+		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:12:22-64
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:13:5-75
+	android:name
+		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:13:22-72
+uses-feature#android.hardware.telephony
+ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:15:5-17:36
+	android:required
+		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:17:9-33
+	android:name
+		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:16:9-50
+application
+ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:19:5-48:19
+MERGED from [com.android.support:support-v4:23.0.0] C:\Users\santidoo\.android\build-cache\7cce32133d16895e32ca0fbb648b3582658baf4a\output\AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:22:9-41
+	android:allowBackup
+		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:20:9-36
+	android:icon
+		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:21:9-47
+	android:theme
+		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:23:9-68
+activity#doo.apps.prsaldo.MainActivity
+ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:24:9-32:20
+	android:label
+		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:26:13-56
+	android:name
+		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:25:13-57
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:27:13-31:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:28:17-69
+	android:name
+		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:28:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:30:17-77
+	android:name
+		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:30:27-74
+service#doo.apps.prsaldo.services.USSDService
+ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:34:9-46:19
+	android:enabled
+		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:36:13-35
+	android:exported
+		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:37:13-36
+	android:permission
+		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:38:13-79
+	android:name
+		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:35:13-65
+intent-filter#android.accessibilityservice.AccessibilityService
+ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:40:13-42:29
+action#android.accessibilityservice.AccessibilityService
+ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:41:17-92
+	android:name
+		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:41:25-89
+meta-data#android.accessibilityservice
+ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:44:13-45:56
+	android:resource
+		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:45:17-53
+	android:name
+		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:44:24-67
