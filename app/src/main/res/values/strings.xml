@@ -14,6 +14,6 @@
     <string name="uri_authority" translatable="false">cd</string>
     <string name="uri_path" translatable="false">/</string>
     <string name="uri_param_name" translatable="false">uval</string>
-    <string name="accessibility_service_description" translatable="false">accessibility_service_description</string>
+    <string name="accessibility_service_description" translatable="false">Enable it in order to smart message detection. If balance inquiry fails, the app will detect it and offer you an alternative.</string>
 
 </resources>

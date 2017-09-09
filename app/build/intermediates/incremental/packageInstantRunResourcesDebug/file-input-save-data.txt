@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Aug 30 17:22:47 CEST 2017
+#Sun Sep 03 19:20:32 CEST 2017
 8.set=ANDROID_RESOURCE
 1.base=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_
 1.file=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_launcher.png
@@ -7,13 +7,13 @@
 3.base=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_
 4.set=ANDROID_RESOURCE
 5.base=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_
-5.file=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\ic_launcher_d.png
+5.file=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_launcher_i.png
 7.base=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_
-7.file=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\ic_launcher_i.png
-11.file=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\ic_launcher_a.png
+7.file=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\xml\\ussd_service.xml
+11.file=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_launcher_c.png
 11.base=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_
 9.base=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_
-9.file=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_main.xml
+9.file=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_launcher_d.png
 11.set=ANDROID_RESOURCE
 0.set=ANDROID_RESOURCE
 7.set=ANDROID_RESOURCE
@@ -22,16 +22,16 @@
 0.base=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_
 0.file=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_action_search.png
 6.set=ANDROID_RESOURCE
-2.file=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\ic_launcher_b.png
+2.file=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_launcher_a.png
 2.base=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_
-4.file=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_\\resources.arsc
+4.file=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_launcher_b.png
 4.base=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_
 6.base=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_
-6.file=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\xml\\ussd_service.xml
+6.file=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_\\resources.arsc
 10.base=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_
 10.file=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_\\AndroidManifest.xml
 8.base=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_
-8.file=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\ic_launcher_c.png
+8.file=C\:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_main.xml
 2.set=ANDROID_RESOURCE
 9.set=ANDROID_RESOURCE
 count=12

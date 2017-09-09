@@ -1,21 +1,18 @@
 package doo.apps.prsaldo;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
 import doo.apps.prsaldo.countries.*;
+import doo.apps.prsaldo.services.USSDService;
 import doo.apps.saldo.R;
 
 import android.Manifest;
+import android.accessibilityservice.AccessibilityServiceInfo;
 import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
 import android.content.IntentFilter;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.LocalBroadcastManager;
@@ -23,6 +20,8 @@ import android.telephony.SmsManager;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.accessibility.AccessibilityEvent;
+import android.view.accessibility.AccessibilityManager;
 import android.widget.Toast;
 import android.app.Activity;
 import android.content.Context;
@@ -31,6 +30,8 @@ import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
+
+import java.util.List;
 
 public class MainActivity extends Activity {
 
@@ -46,6 +47,7 @@ public class MainActivity extends Activity {
 	private String alert_no;
 	private String body;
 	private String chooser_title;
+    private String serviceID;
 
 	private static final int PERMISSIONS_CALL_PHONE = 1;
 	private static final int PERMISSIONS_SEND_SMS = 2;
@@ -69,8 +71,9 @@ public class MainActivity extends Activity {
 		alert_no = getResources().getString(R.string.alert_no);
 		body = getResources().getString(R.string.email_body);
 		chooser_title = getResources().getString(R.string.chooser_title);
+        serviceID = getPackageName() + "/" + USSDService.class.getCanonicalName();
 
-		//registerReceiver();
+        registerReceiver();
 
 		tlfnoMgr = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
 		if (tlfnoMgr.getSimState() == TelephonyManager.SIM_STATE_READY) {
@@ -80,6 +83,7 @@ public class MainActivity extends Activity {
 
 			USSD_kod = getUSSDkod(cc);
 			//USSD_kod = "u*133#:*555#";
+            //USSD_kod = "";
 
 			if (TextUtils.isEmpty(USSD_kod)) {
 				// TODO: CREATE AN ALERTDIALOG AND OPEN EMAIL PROVIDER
@@ -104,16 +108,16 @@ public class MainActivity extends Activity {
 			String message = intent.getStringExtra("ussd");
 			Log.d("santi", "BroadcastReceiver: " + message);
 
-			if (message.contentEquals("OK")) {
-				unregisterReceiver();
+			if (message.contentEquals("OK"))
 				finish();
-			} else if (USSD_kod.startsWith("u")) {
-				// Show alert to ask user for a second try
-				showAlert2();
-			} else {
-				showAlert();
-				unregisterReceiver();
-			}
+			else
+			    if (USSD_kod.startsWith("u")) {
+				    // Show alert to ask user for a second try
+				    showAlert2();
+			    }
+			    else {
+				    showAlert();
+			    }
 		}
 	};
 
@@ -616,37 +620,6 @@ public class MainActivity extends Activity {
 		finish();
 	}
 
-	/* No needed anymore
-	private static void createLog(String pathAppSD, String logFileName) {
-
-		try {
-
-			Log.i(INFO, "SimCountryIso: " + tlfnoMgr.getSimCountryIso());
-			Log.i(INFO, "SimOperatorName: " + tlfnoMgr.getSimOperatorName());
-			Log.i(INFO, "SimOperator: " + tlfnoMgr.getSimOperator());
-
-			// Opening a file for output
-			File logFile = new File(pathAppSD, logFileName);
-			FileWriter fileWriter = new FileWriter(logFile);
-
-			Process process = Runtime.getRuntime().exec("logcat -d -s dooApps");
-			BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
-			StringBuilder log = new StringBuilder();
-			String line;
-			while ((line = bufferedReader.readLine()) != null) {
-				log.append(line);
-				log.append('\n');
-			}
-
-			fileWriter.append(log.toString());
-			fileWriter.flush();
-			fileWriter.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-			Log.d(INFO, "exception creating File - " + e);
-		}
-	} */
-
 	/** Dial the USSD code **/
 	private void getBalance(String kod) {
 
@@ -659,12 +632,13 @@ public class MainActivity extends Activity {
 				sendEmptySMS(smsNumber);
 			else
 				sendSMS(smsNumber, smsText);
-			//finish();
+
+            finish();
+
 		} else
-			// Special case when two USSD codes are stored in the same string
+			// Special case when two USSD codes are stored in the same string -- WIP
 			if (kod.startsWith("u")) {
 
-				//startService(new Intent(this, USSDService.class)); // Needed??
 				// Get the first USSD code
 				String ussd = kod.substring(1, kod.indexOf(":"));
 				ussd = "tel:" + ussd.replace("#", Uri.encode("#"));
@@ -683,7 +657,9 @@ public class MainActivity extends Activity {
 				startActivity(intent);
 			}
 
-		finish(); // CONTINUAR AQUI!!!! Si no se activa lo de accesibilidad, app stuck
+        Log.d("santi", "isAccessibilityEnabled: " + isAccessibilityEnabled(MainActivity.this, serviceID));
+        if (!isAccessibilityEnabled(MainActivity.this, serviceID))
+            finish();
 	}
 
 	public final void sendEmptySMS(String smsNumber) {
@@ -724,4 +700,22 @@ public class MainActivity extends Activity {
 			}
 		}
 	}
+
+    public static boolean isAccessibilityEnabled(Context context, String id) {
+
+        AccessibilityManager am = (AccessibilityManager) context.getSystemService(Context.ACCESSIBILITY_SERVICE);
+        List<AccessibilityServiceInfo> runningServices = am.getEnabledAccessibilityServiceList(AccessibilityEvent.TYPES_ALL_MASK);
+        for (AccessibilityServiceInfo service : runningServices) {
+            if (id.equals(service.getId()))
+                return true;
+        }
+        return false;
+    }
+
+    @Override
+    public void finish() {
+        unregisterReceiver();
+        Log.d("santi", "finish");
+        super.finish();
+    }
 }

@@ -3,6 +3,7 @@ package doo.apps.prsaldo.services;
 import android.accessibilityservice.AccessibilityService;
 import android.accessibilityservice.AccessibilityServiceInfo;
 import android.content.Intent;
+import android.os.Build;
 import android.support.v4.content.LocalBroadcastManager;
 import android.text.TextUtils;
 import android.util.Log;
@@ -43,17 +44,21 @@ public class USSDService extends AccessibilityService {
         Log.d(TAG, text);
         if( TextUtils.isEmpty(text) ) return;
 
+        Log.d(TAG, "text.toLowerCase().contains(): " + text.toLowerCase().contains("ono"));
         // Handle USSD response here
-        if (text.toLowerCase().contains("ono")) {
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+        if (text.toLowerCase().contains("orange")) {
 
-                // Close dialog
-                //performGlobalAction(GLOBAL_ACTION_BACK); // This works on 4.1+ only
-                sendBroadcast(text);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+            // Close dialog
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN)
+                performGlobalAction(GLOBAL_ACTION_BACK); // This works on 4.1+ only - API Level: 16
+
+            sendBroadcast(text);
         }
         else sendBroadcast("OK");
     }

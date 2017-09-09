@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="accessibility_service_description" translatable="false">accessibility_service_description</string>
+    <string name="accessibility_service_description" translatable="false">Enable it in order to smart message detection. If balance inquiry fails, the app will detect it and offer you an alternative.</string>
     <string name="alert_message">Your phone carrier is not supported yet. Please send me the details so it can be included in the next release.</string>
     <string name="alert_message_try_again">Default method has failed. Would you like to try a new one?</string>
     <string name="alert_no">No, thanks!</string>
