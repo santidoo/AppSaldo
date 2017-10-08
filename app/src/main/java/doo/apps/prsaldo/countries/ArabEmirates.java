@@ -7,19 +7,22 @@ public class ArabEmirates {
 		int nr = Integer.parseInt(ID);
 		switch (nr) {
 
-			default:
+            case 42403:
+                return "*135#";
+
+            default:
 				return getCodeByName(name);
 		}
 	}
 	
 	static private String getCodeByName(String name) {
 				
-		/** Du **/
-		if (name.contains("Du") || name.contains("DU") || name.contains("du"))
+		// Du | or SMS 'balance' to 1355
+		if (name.toLowerCase().contains("du"))
 			return "*135#";
 
-        /** ETISALAT **/
-        else if(name.contains("ETISALAT") || name.contains("tisalat") || name.contains("Eti") || name.contains("eti"))
+        // ETISALAT
+        else if (name.toLowerCase().contains("etisalat"))
         	return "*121#";
 
 		else

@@ -7,33 +7,40 @@ public class Belgium {
 		int nr = Integer.parseInt(ID);
 		switch (nr) {
 			
-			/** PROXIMUS **/
+			// PROXIMUS
 			case 20601:
 				return "#121#";
 				
-			/** Base | Telenet **/
+			// Base | Telenet
 			case 20605:
 				return "*444*#";
 
-			default:
+            // Lycamobile
+            case 20606:
+                return "*103*100#";
+
+            default:
 				return getCodeByName(name);
 		}
 	}
 	
 	static private String getCodeByName(String name) {
 				
-		/** PROXIMUS **/
-		if (name.contains("PROXI") || name.contains("roxi"))
+		// PROXIMUS
+		if (name.toLowerCase().contains("proxi"))
 			return "#121#";
 		
-		/** BASE **/ //  *777*# also seems to do the same
-		else if (name.contains("BASE") || name.contains("ase"))
+		// BASE | *777*# also seems to do the same
+		else if (name.toLowerCase().contains("base"))
 			return "*444*#";
 		
-		/** Base | Telenet **/ // s1914:CONSULT
-		else if (name.contains("Telenet") || name.contains("TELENET") || name.contains("telenet") ||
-				 name.contains("BASE") || name.contains("Base") || name.contains("base"))
+		// Base | Telenet -> s1914:CONSULT
+		else if (name.toLowerCase().contains("telenet"))
 			return "*444*#";
+
+        // Lycamobile | *103# or 93# or dial 1966 or 92# or SMS to 1966 with the message BAL
+        else if (name.toLowerCase().contains("lycamobile"))
+            return "*103*100#";
 
 		else
 			return "";
