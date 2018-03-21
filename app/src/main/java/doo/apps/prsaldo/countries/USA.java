@@ -7,7 +7,7 @@ public class USA {
 		int nr = Integer.parseInt(ID);
 		switch (nr) {
 
-            // Verizon Wireless; Mid-Tex Cellular
+            // Verizon Wireless; Mid-Tex Cellular; Tracfone
             case 31000:
                 return "#225";
 
@@ -130,6 +130,10 @@ public class USA {
         // Sprint USA
         else if(name.toLowerCase().contains("sprint"))
             return "";
+
+        // Tracfone
+        else if (name.toLowerCase().contains("tracfone"))
+            return "#225";
 
 		// OTHERS //////////////////////////////////////////////////
 		// movistar
