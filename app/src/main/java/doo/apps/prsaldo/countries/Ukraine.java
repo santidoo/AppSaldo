@@ -7,13 +7,17 @@ public class Ukraine {
 		int nr = Integer.parseInt(ID);
 		switch (nr) {
 			
-			/** KYIVSTAR **/
+			// KYIVSTAR
 			case 25503:
 				return "*111#";
 				
-			/** Beeline UA **/
+			// Beeline UA
 			case 25502:
 				return "*102#";
+
+            // Lifecell
+            case 25506:
+                return "*111#";
 				
 			default:
 				return getCodeByName(name);
@@ -22,13 +26,17 @@ public class Ukraine {
 	
 	static private String getCodeByName(String name) {
 				
-		/** KYIVSTAR **/
+		// KYIVSTAR
 		if (name.toLowerCase().contains("kyivstar"))
 			return "*111#";
 		
-		/** Beeline UA **/
+		// Beeline UA
 		else if (name.toLowerCase().contains("beeline"))
 			return "*102#";
+
+        // Lifecell
+        else if (name.toLowerCase().contains("lifecell"))
+            return "*111#";
 
 		else
 			return "";

@@ -7,20 +7,28 @@ public class Israel {
 		int nr = Integer.parseInt(ID);
 		switch (nr) {
 			
-			/** JAWWAL **/
+			// JAWWAL
 			case 42505:
 				return "";
 
-			default:
+            // Pelephone | *998 or *199
+            case 42503:
+                return "*998";
+
+            default:
 				return getCodeByName(name);
 		}
 	}
 	
 	static private String getCodeByName(String name) {
 				
-		/** JAWWAL **/
-		if (name.contains("JAWWAL") || name.contains("Jawwal") || name.contains("jawwal"))
+		// JAWWAL
+		if (name.toLowerCase().contains("jawwal"))
 			return "";
+
+        // Pelephone | *998 or *199
+        else if (name.toLowerCase().contains("pelephone"))
+            return "*998";
 
 		else
 			return "";

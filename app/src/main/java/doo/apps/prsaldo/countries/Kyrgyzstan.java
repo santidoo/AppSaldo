@@ -1,15 +1,15 @@
 package doo.apps.prsaldo.countries;
 
-public class Angola {
+public class Kyrgyzstan {
 
 	static public String getCode(String ID, String name) {
 
 		int nr = Integer.parseInt(ID);
 		switch (nr) {
 			
-			// UNITEL
-			case 63102:
-				return "*103#";
+			// Beeline KG
+			case 43701:
+				return "*102#";
 
 			default:
 				return getCodeByName(name);
@@ -18,13 +18,13 @@ public class Angola {
 	
 	static private String getCodeByName(String name) {
 				
-		// UNITEL | *103# or *102#
-		if (name.toLowerCase().contains("unitel"))
-			return "*103#";
+		// Beeline KG
+		if (name.toLowerCase().contains("beeline"))
+			return "*102#";
 
-        // Movicel | "s19196:"
-        else if(name.toLowerCase().contains("movicel"))
-        	return "*196#";
+        // MegaCom
+        else if (name.toLowerCase().contains("megacom"))
+            return "*500#";
 
 		else
 			return "";

@@ -12,7 +12,6 @@ import android.content.IntentFilter;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.LocalBroadcastManager;
@@ -41,8 +40,7 @@ public class MainActivity extends Activity {
 	private String USSD_kod;
 	private AlertDialog alertDialog;
 
-	private String no_sim;
-	private String alert_message;
+    private String alert_message;
 	private String alert_yes;
 	private String alert_no;
 	private String body;
@@ -53,11 +51,11 @@ public class MainActivity extends Activity {
 	private static final int PERMISSIONS_SEND_SMS = 2;
 
 	private enum CountriesSupported {
-		ae, am, ao, ar, au, az, bb, bd, be, bg, bh, bj, bn, bo, br, by, bz, ca, cg, ch, cl, cm, cn, co, cr, cu, cz,
-		de, dk, doo, dz, ec, eg, es, et, fi, fr, ge, gb, gh, gt, hk, hn, hr, ht, hu, id, ie, il, in, iq, ir, it,
-		jm, jo, ke, kh, kr, kw, kz, lb, lk, ly, ma, mm, mo, mq, mw, mx, my, na, ncn, ng, ni, nl, no, np, nz, om,
+		ae, af, am, ao, ar, au, az, bb, bd, be, bg, bh, bj, bn, bo, br, by, bz, ca, cg, ch, cl, cm, cn, co, cr, cu, cz,
+		de, dk, doo, dz, ec, eg, es, et, fi, fr, ge, gb, gh, gm, gt, hk, hn, hr, ht, hu, id, ie, il, in, iq, ir, it,
+		jm, jo, ke, kh, kr, kw, kz, lb, lk, ly, ma, mh, mm, mo, mq, mw, mx, my, na, ncn, ng, ni, nl, no, np, nz, om,
 		pa, pe, ph, pk, pl, pr, pt, py, qa, ro, rs, ru, sa, sd, se, sg, so, sr, sv, sy, th, tm, tn, tr, tt,
-		ua, ug, uk, us, uy, uz, ve, vn, ye, za, zh, zw;
+		ua, ug, uk, us, uy, uz, ve, vn, ye, za, zh, zw
 	}
 
 	@Override
@@ -65,7 +63,7 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 
 		// Initialize all strings to support Locale feature
-		no_sim = getResources().getString(R.string.no_sim);
+        String no_sim = getResources().getString(R.string.no_sim);
 		alert_message = getResources().getString(R.string.alert_message);
 		alert_yes = getResources().getString(android.R.string.ok);
 		alert_no = getResources().getString(R.string.alert_no);
@@ -73,7 +71,8 @@ public class MainActivity extends Activity {
 		chooser_title = getResources().getString(R.string.chooser_title);
         serviceID = getPackageName() + "/" + USSDService.class.getCanonicalName();
 
-        registerReceiver();
+        // WIP
+        // registerReceiver();
 
 		tlfnoMgr = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
 		if (tlfnoMgr.getSimState() == TelephonyManager.SIM_STATE_READY) {
@@ -180,6 +179,9 @@ public class MainActivity extends Activity {
 
 				case ae:
 					return ArabEmirates.getCode(mccmnc, operatorName);
+
+                case af:
+                    return Afghanistan.getCode(mccmnc, operatorName);
 
 				case am:
 					return Armenia.getCode(mccmnc, operatorName);
@@ -298,8 +300,11 @@ public class MainActivity extends Activity {
 				case gh:
 					return Ghana.getCode(mccmnc, operatorName);
 
-				case gt:
-					return Guatemala.getCode(mccmnc, operatorName);
+                case gm:
+                    return Gambia.getCode(mccmnc, operatorName);
+
+                case gt:
+                    return Guatemala.getCode(mccmnc, operatorName);
 
 				case hk:
 					return HongKong.getCode(mccmnc, operatorName);
@@ -323,7 +328,7 @@ public class MainActivity extends Activity {
 					return Ireland.getCode(mccmnc, operatorName);
 
 				case il:
-					return India.getCode(mccmnc, operatorName);
+					return Israel.getCode(mccmnc, operatorName);
 
 				case in:
 					return India.getCode(mccmnc, operatorName);
@@ -369,6 +374,9 @@ public class MainActivity extends Activity {
 
 				case ma:
 					return Morocco.getCode(mccmnc, operatorName);
+
+                case mh:
+                    return Marshall_Islands.getCode(mccmnc, operatorName);
 
 				case mm:
 					return Myanmar.getCode(mccmnc, operatorName);
@@ -604,7 +612,7 @@ public class MainActivity extends Activity {
 			e.printStackTrace();
 		}
 
-		/** Suggested way to send an email **/
+		// Suggested way to send an email
 		Intent emailIntent2 = new Intent(Intent.ACTION_VIEW);
 		emailIntent2.setData(Uri.parse("mailto:checkbalance.dooapps@gmail.com"));
 		emailIntent2.putExtra(Intent.EXTRA_SUBJECT, "Carrier Details");

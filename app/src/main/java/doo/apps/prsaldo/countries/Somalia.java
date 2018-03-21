@@ -7,20 +7,28 @@ public class Somalia {
 		int nr = Integer.parseInt(ID);
 		switch (nr) {
 			
-			/** HORMUUD **/
+			// HORMUUD
 			case 63750:
 				return "*122#";
 
-			default:
+            // Telesom
+            case 63701:
+                return "*122#";
+
+            default:
 				return getCodeByName(name);
 		}
 	}
 	
 	static private String getCodeByName(String name) {
 				
-		/** HORMUUD **/
+		// HORMUUD
 		if (name.toLowerCase().contains("hormuud"))
 			return "*122#";
+
+        // telesom
+        else if (name.toLowerCase().contains("telesom"))
+            return "*122#";
 
 		else
 			return "";
