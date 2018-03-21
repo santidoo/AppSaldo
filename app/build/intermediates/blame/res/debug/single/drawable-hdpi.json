@@ -8,10 +8,6 @@
         "source": "C:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher_a.png"
     },
     {
-        "merged": "C:\\Users\\santidoo\\StudioProjects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher_d.png",
-        "source": "C:\\Users\\santidoo\\StudioProjects\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher_d.png"
-    },
-    {
         "merged": "C:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher_d.png",
         "source": "C:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher_d.png"
     },
@@ -20,20 +16,8 @@
         "source": "C:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\santidoo\\StudioProjects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher.png",
-        "source": "C:\\Users\\santidoo\\StudioProjects\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\santidoo\\StudioProjects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher_ii.png",
-        "source": "C:\\Users\\santidoo\\StudioProjects\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher_ii.png"
-    },
-    {
         "merged": "C:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher_b.png",
         "source": "C:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher_b.png"
-    },
-    {
-        "merged": "C:\\Users\\santidoo\\StudioProjects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher_b.png",
-        "source": "C:\\Users\\santidoo\\StudioProjects\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher_b.png"
     },
     {
         "merged": "C:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher_i.png",
@@ -44,23 +28,7 @@
         "source": "C:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher_ii.png"
     },
     {
-        "merged": "C:\\Users\\santidoo\\StudioProjects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_action_search.png",
-        "source": "C:\\Users\\santidoo\\StudioProjects\\app\\src\\main\\res\\drawable-hdpi\\ic_action_search.png"
-    },
-    {
-        "merged": "C:\\Users\\santidoo\\StudioProjects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher_c.png",
-        "source": "C:\\Users\\santidoo\\StudioProjects\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher_c.png"
-    },
-    {
-        "merged": "C:\\Users\\santidoo\\StudioProjects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher_i.png",
-        "source": "C:\\Users\\santidoo\\StudioProjects\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher_i.png"
-    },
-    {
         "merged": "C:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher_c.png",
         "source": "C:\\Users\\santidoo\\StudioProjects\\AppSaldo\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher_c.png"
-    },
-    {
-        "merged": "C:\\Users\\santidoo\\StudioProjects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher_a.png",
-        "source": "C:\\Users\\santidoo\\StudioProjects\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher_a.png"
     }
 ]

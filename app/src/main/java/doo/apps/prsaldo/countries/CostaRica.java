@@ -7,46 +7,46 @@ public class CostaRica {
 		int nr = Integer.parseInt(ID);
 		switch (nr) {
 			
-			/**  ICE Kolbi **/
+			//  ICE Kolbi
 			case 71201:
 				return "*1150#";
 				
-			/**  ICE Kolbi **/
+			//  ICE Kolbi
 			case 71202:
 				return "*1150#";				
 
-			/** Claro CR **/
+			// Claro CR
 			case 71203:
 				return "*30";
 				
-			/** movistar - kolbi? **/
+			// Movistar CR - kolbi? | *650#
 			case 71204:
-				return "*650#";
-				
-			/** fullmovil **/
-			case 71220:
 				return "*123#";
 				
-			default:
+			// fullmovil
+			case 71220:
+				return "*123#";
+
+            default:
 				return getCodeByName(name);
 		}
 	}
 	
 	static private String getCodeByName(String name) {
 				
-		/** Claro CR **/
+		// Claro CR
 		if (name.toLowerCase().contains("claro") || name.toLowerCase().contains("cr"))
 			return "*30";
 		
-		/** movistar - kolbi? **/ // "s651:SALDO"
+		// Movistar CR - kolbi? | *123# or "s651:SALDO"
 		else if (name.toLowerCase().contains("movistar"))
-			return "*650#";
-		
-		/**  fullmovil **/
+			return "*123#";
+
+		//  fullmovil
 		else if (name.toLowerCase().contains("fullmovil"))
 			return "*123#";
 		
-		/**  Kolbi ICE **/ // or "s1150:" or *1151#
+		//  Kolbi ICE | or "s1150:" or *1151#
 		else if (name.toLowerCase().contains("kolbi") || name.toLowerCase().contains("ice"))
 			return "*1150#";
 
@@ -55,4 +55,4 @@ public class CostaRica {
 	}
 }
 
-/** http://prepaid-data-sim-card.wikia.com/wiki/Costa_Rica **/
+// http://prepaid-data-sim-card.wikia.com/wiki/Costa_Rica

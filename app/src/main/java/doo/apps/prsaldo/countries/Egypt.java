@@ -7,28 +7,40 @@ public class Egypt {
 		int nr = Integer.parseInt(ID);
 		switch (nr) {
 			
-			/** Mobinil | Vodafone? **/
+			// Orange Egypt (Mobinil)
 			case 60201:
 				return "#100*3#";
 
-			default:
+            // WE (te - Telecom Egypt)
+            case 60204:
+                return "*130#";
+
+            // etisalat | Call 555
+            case 60203:
+                return "*134#";
+
+            default:
 				return getCodeByName(name);
 		}
 	}
 	
 	static private String getCodeByName(String name) {
 				
-		/** Vodafone Egypt **/
+		// Vodafone Egypt | *111# or *868*1# (before)
 		if (name.toLowerCase().contains("vodafone"))
-			return "*868*1#";
+			return "*141#";
 		
-		/** Mobinil | Vodafone? **/
+		// Orange Egypt (Mobinil) | *555#
 		else if (name.toLowerCase().contains("mobinil"))
 			return "#100*3#";
 		
-		/** etisalat **/ // *121#
+		// etisalat | *130# or *121# or Call 555
 		else if (name.toLowerCase().contains("etisalat")) 
-			return "";
+			return "*134#";
+
+        // WE (te - Telecom Egypt)
+        else if (name.toLowerCase().contains("te") || name.toLowerCase().contains("we") || name.toLowerCase().contains("telecom"))
+            return "*130#";
 		
 		else
 			return "";

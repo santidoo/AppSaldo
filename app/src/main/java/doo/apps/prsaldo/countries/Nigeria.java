@@ -7,7 +7,7 @@ public class Nigeria {
 		int nr = Integer.parseInt(ID);
 		switch (nr) {
 			
-			/** etisalat **/
+			// etisalat
 			case 62160:
 				return "*232#";
 				
@@ -18,23 +18,23 @@ public class Nigeria {
 	
 	static private String getCodeByName(String name) {
 				
-		/** etisalat **/
+		// etisalat
 		if (name.toLowerCase().contains("etisalat"))
 			return "*232#";
 		
-		/** Airtel Nigeria **/ // or *126#
+		// Airtel Nigeria | *123*9# or *126#
 		else if (name.toLowerCase().contains("airtel"))
-			return "*123*9#";
+			return "*123#";
 		
-		/** MTN **/
+		// MTN
 		else if (name.toLowerCase().contains("mtn"))
 			return "*556#";
 		
-		/** GLO **/
+		// GLO | *#124#
 		else if (name.toLowerCase().contains("glo"))
-			return "*#124#";	
+			return "#124*1#";
 		
-		/** Starcomms **/
+		// Starcomms
 		else if (name.toLowerCase().contains("starcomms"))
 			return "*225#";
 		

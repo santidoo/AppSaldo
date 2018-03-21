@@ -7,8 +7,13 @@ public class ArabEmirates {
 		int nr = Integer.parseInt(ID);
 		switch (nr) {
 
+            // Du
             case 42403:
                 return "*135#";
+
+            // etisalat or five
+            case 42402:
+                return "*121#";
 
             default:
 				return getCodeByName(name);
@@ -21,9 +26,13 @@ public class ArabEmirates {
 		if (name.toLowerCase().contains("du"))
 			return "*135#";
 
-        // ETISALAT
+        // etisalat or five
         else if (name.toLowerCase().contains("etisalat"))
         	return "*121#";
+
+            // etisalat or five
+        else if (name.toLowerCase().contains("five"))
+            return "*121#";
 
 		else
 			return "";
