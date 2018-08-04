@@ -7,9 +7,9 @@ public class Egypt {
 		int nr = Integer.parseInt(ID);
 		switch (nr) {
 			
-			// Orange Egypt (Mobinil)
+			// Orange Egypt (Mobinil) || #100*3#
 			case 60201:
-				return "#100*3#";
+				return "#100#";
 
             // WE (te - Telecom Egypt)
             case 60204:
@@ -31,8 +31,8 @@ public class Egypt {
 			return "*141#";
 		
 		// Orange Egypt (Mobinil) | *555#
-		else if (name.toLowerCase().contains("mobinil"))
-			return "#100*3#";
+		else if (name.toLowerCase().contains("mobinil") || name.toLowerCase().contains("orange"))
+			return "#100#";
 		
 		// etisalat | *130# or *121# or Call 555
 		else if (name.toLowerCase().contains("etisalat")) 

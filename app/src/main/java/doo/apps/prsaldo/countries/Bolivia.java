@@ -7,7 +7,7 @@ public class Bolivia {
 		int nr = Integer.parseInt(ID);
 		switch (nr) {
 			
-			/** MOVIL 4G | Entel **/
+			// MOVIL 4G | Entel
 			case 73602:
 				return "*105#";
 
@@ -18,16 +18,16 @@ public class Bolivia {
 	
 	static private String getCodeByName(String name) {
 				
-		/** MOVIL 4G | Entel **/ // SALDO al 330
-		if (name.contains("MOVIL 4G") || name.contains("movil 4g") || name.contains("ENTEL") || name.contains("ntel"))
+		// MOVIL 4G | Entel | SALDO al 330
+		if (name.toLowerCase().contains("movil 4g") || name.contains("entel"))
 			return "*105#";
 		
-		/** TIGO **/
-		else if (name.contains("TIGO") || name.contains("Tigo") || name.contains("tigo"))
+		// TIGO
+		else if (name.toLowerCase().contains("tigo"))
 			return "*123#";
 		
-		/** VIVA **/ // s105:c
-		else if (name.contains("VIVA") || name.contains("Viva") || name.contains("viva") || name.contains(""))
+		// VIVA | s105:c
+		else if (name.toLowerCase().contains("viva"))
 			return "*105#";
 
 		else

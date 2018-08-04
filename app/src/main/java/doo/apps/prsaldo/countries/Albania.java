@@ -1,26 +1,26 @@
 package doo.apps.prsaldo.countries;
 
-public class Cuba {
+public class Albania {
 
 	static public String getCode(String ID, String name) {
 
 		int nr = Integer.parseInt(ID);
 		switch (nr) {
 			
-			// Cubacell
-			case 36801:
-				return "*222#";
+			// VODAFONE AL || s141:Balance
+            case 27602:
+                return "#123#";
 
-			default:
+            default:
 				return getCodeByName(name);
 		}
 	}
 	
 	static private String getCodeByName(String name) {
-				
-		// Cubacell
-		if (name.toLowerCase().contains("cubacel"))
-			return "*222#";
+
+        // VODAFONE AL || s141:Balance
+		if (name.toLowerCase().contains("vodafone"))
+            return "#123#";
 
 		else
 			return "";

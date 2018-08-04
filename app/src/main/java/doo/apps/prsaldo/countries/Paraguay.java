@@ -25,12 +25,12 @@ public class Paraguay {
 	}
 	
 	static private String getCodeByName(String name) {
-				
+
 		// Personal
 		if (name.toLowerCase().contains("personal"))
 			return "*121#";
 		
-		// TIGO | *611# y *222#
+		// TIGO - Telecel | *611# y *222#
 		else if (name.toLowerCase().contains("tigo"))
 			return "*611#";
 
@@ -38,7 +38,6 @@ public class Paraguay {
         else if (name.toLowerCase().contains("claro"))
             return "*111#";
 
-		else
-			return "";
-	}
+        else return "";
+    }
 }

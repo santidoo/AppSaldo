@@ -1,6 +1,22 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:2:1-48:12
+ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:2:1-31:12
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\0e7bcf42d7ff65ae6fb196db8db2ac03\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\ff33d27b7aae837cc7e5ba7c9da11ef8\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\ace1ed63ccd88af5e462a00d7c36e78c\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\5496ef3f17cb68250be91719b22362b3\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\6b96d066feffe88dcb599c8aa0eeb147\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\6b8c5ac4e7c600bd02f73ee7a29fc7c3\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\3649224cebaab2692cef6bae7f6537d6\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\f612e559cfe087c02669c04266a8b702\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\a2273c982971f0373e6aae13a28043ee\AndroidManifest.xml:17:1-31:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\ff1051a35f4f3d306893acfb737df656\AndroidManifest.xml:17:1-30:12
+INJECTED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:2:1-31:12
 	package
 		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:3:5-29
 		INJECTED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml
@@ -9,12 +25,12 @@ ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifes
 		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:5:5-30
 		INJECTED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
 		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:4:5-29
 		INJECTED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml
-	xmlns:android
-		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.CALL_PHONE
 ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:7:5-69
 	android:name
@@ -34,14 +50,33 @@ ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifes
 	android:name
 		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:12:9-50
 application
-ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:15:5-46:19
-MERGED from [com.android.support:support-v4:23.0.0] C:\Users\santidoo\.android\build-cache\7cce32133d16895e32ca0fbb648b3582658baf4a\output\AndroidManifest.xml:22:5-20
+ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:15:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\0e7bcf42d7ff65ae6fb196db8db2ac03\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\0e7bcf42d7ff65ae6fb196db8db2ac03\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\ff33d27b7aae837cc7e5ba7c9da11ef8\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\ff33d27b7aae837cc7e5ba7c9da11ef8\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\ace1ed63ccd88af5e462a00d7c36e78c\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\ace1ed63ccd88af5e462a00d7c36e78c\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\5496ef3f17cb68250be91719b22362b3\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\5496ef3f17cb68250be91719b22362b3\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\6b96d066feffe88dcb599c8aa0eeb147\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\6b96d066feffe88dcb599c8aa0eeb147\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\6b8c5ac4e7c600bd02f73ee7a29fc7c3\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\6b8c5ac4e7c600bd02f73ee7a29fc7c3\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\3649224cebaab2692cef6bae7f6537d6\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\3649224cebaab2692cef6bae7f6537d6\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\f612e559cfe087c02669c04266a8b702\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\f612e559cfe087c02669c04266a8b702\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\a2273c982971f0373e6aae13a28043ee\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\a2273c982971f0373e6aae13a28043ee\AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\ff1051a35f4f3d306893acfb737df656\AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\ff1051a35f4f3d306893acfb737df656\AndroidManifest.xml:24:5-28:19
 	android:label
 		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:18:9-41
-	android:allowBackup
-		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:16:9-36
 	android:icon
 		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:17:9-47
+	android:allowBackup
+		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:16:9-36
 	android:theme
 		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:19:9-68
 activity#doo.apps.prsaldo.MainActivity
@@ -50,7 +85,7 @@ ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifes
 		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:22:13-56
 	android:name
 		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:21:13-57
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:23:13-27:29
 action#android.intent.action.MAIN
 ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:24:17-69
@@ -62,10 +97,65 @@ ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifes
 		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml:26:27-74
 uses-sdk
 INJECTED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:support-v4:23.0.0] C:\Users\santidoo\.android\build-cache\7cce32133d16895e32ca0fbb648b3582658baf4a\output\AndroidManifest.xml:20:5-43
+INJECTED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\0e7bcf42d7ff65ae6fb196db8db2ac03\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\0e7bcf42d7ff65ae6fb196db8db2ac03\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\ff33d27b7aae837cc7e5ba7c9da11ef8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\ff33d27b7aae837cc7e5ba7c9da11ef8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\ace1ed63ccd88af5e462a00d7c36e78c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\ace1ed63ccd88af5e462a00d7c36e78c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\5496ef3f17cb68250be91719b22362b3\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\5496ef3f17cb68250be91719b22362b3\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\6b96d066feffe88dcb599c8aa0eeb147\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\6b96d066feffe88dcb599c8aa0eeb147\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\6b8c5ac4e7c600bd02f73ee7a29fc7c3\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\6b8c5ac4e7c600bd02f73ee7a29fc7c3\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\3649224cebaab2692cef6bae7f6537d6\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\3649224cebaab2692cef6bae7f6537d6\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\f612e559cfe087c02669c04266a8b702\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\f612e559cfe087c02669c04266a8b702\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\a2273c982971f0373e6aae13a28043ee\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\a2273c982971f0373e6aae13a28043ee\AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\ff1051a35f4f3d306893acfb737df656\AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\ff1051a35f4f3d306893acfb737df656\AndroidManifest.xml:20:5-22:41
+INJECTED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\0e7bcf42d7ff65ae6fb196db8db2ac03\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\santidoo\StudioProjects\AppSaldo\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\0e7bcf42d7ff65ae6fb196db8db2ac03\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\ff33d27b7aae837cc7e5ba7c9da11ef8\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\ff33d27b7aae837cc7e5ba7c9da11ef8\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\ace1ed63ccd88af5e462a00d7c36e78c\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\ace1ed63ccd88af5e462a00d7c36e78c\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\5496ef3f17cb68250be91719b22362b3\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\5496ef3f17cb68250be91719b22362b3\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\6b96d066feffe88dcb599c8aa0eeb147\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\6b96d066feffe88dcb599c8aa0eeb147\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\6b8c5ac4e7c600bd02f73ee7a29fc7c3\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\6b8c5ac4e7c600bd02f73ee7a29fc7c3\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\3649224cebaab2692cef6bae7f6537d6\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\3649224cebaab2692cef6bae7f6537d6\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\f612e559cfe087c02669c04266a8b702\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\f612e559cfe087c02669c04266a8b702\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\a2273c982971f0373e6aae13a28043ee\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\a2273c982971f0373e6aae13a28043ee\AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\0e7bcf42d7ff65ae6fb196db8db2ac03\AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\0e7bcf42d7ff65ae6fb196db8db2ac03\AndroidManifest.xml:27:13-51
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\ff1051a35f4f3d306893acfb737df656\AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\ff1051a35f4f3d306893acfb737df656\AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\santidoo\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\ff1051a35f4f3d306893acfb737df656\AndroidManifest.xml:26:13-58

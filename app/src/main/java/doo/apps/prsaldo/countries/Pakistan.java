@@ -10,8 +10,12 @@ public class Pakistan {
 			// Mobilink | at Rs 0.20+tax
 			case 41001:
 				return "*111#";
-				
-			case 41004:
+
+            // Verizon | dial #BAL
+            case 41003:
+                return "#225";
+
+            case 41004:
 				return "*222#";
 				
 			// Telenor
@@ -21,6 +25,10 @@ public class Pakistan {
             // WARID Telecom
             case 41007:
                 return "*100#";
+
+            // NetworkOperator for Telenor PK
+            case 42203:
+                return "*444#";
 
             default:
 				return getCodeByName(name);
@@ -52,6 +60,10 @@ public class Pakistan {
         // WARID Telecom | dial 121
 		else if (name.toLowerCase().contains("warid"))
 			return "*100#";
+
+        // Verizon
+        else if (name.toLowerCase().contains("verizon"))
+            return "#225";
 
 		else
 			return "";

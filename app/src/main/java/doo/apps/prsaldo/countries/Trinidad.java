@@ -7,7 +7,7 @@ public class Trinidad {
 		int nr = Integer.parseInt(ID);
 		switch (nr) {
 			
-			/** DIGICEL **/
+			// DIGICEL
 			case 37413:
 				return "*120#";
 
@@ -18,8 +18,8 @@ public class Trinidad {
 	
 	static private String getCodeByName(String name) {
 				
-		/** DIGICEL **/
-		if (name.contains("DIGICEL") || name.contains("Digicel") || name.contains("digicel"))
+		// DIGICEL
+		if (name.toLowerCase().contains("digicel"))
 			return "*120#";
 
 		else

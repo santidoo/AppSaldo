@@ -10,42 +10,54 @@ public class Russia {
 			case 25039:
 				return "*123#";
 				
-			/** Beeline **/
+			// Beeline
 			case 25099:
 				return "*102#";
 				
-			/** Tele2 **/
+			// Tele2
 			case 25020:
 				return "*105#";
 
-			default:
+            // YOTA
+            case 25011:
+                return "*101#";
+
+            // MegaFon
+            case 25002:
+                return "*100#";
+
+            default:
 				return getCodeByName(name);
 		}
 	}
 	
 	static private String getCodeByName(String name) {
 				
-		/** MTS **/
+		// MTS
 		if (name.toLowerCase().contains("mts") || name.toLowerCase().contains("mtc"))
         	return "*100#";
 
-		/** Megafon **/
+		// Megafon
         else if(name.toLowerCase().contains("megafon"))
         	return "*100#";
 
-        /** Beeline **/
+        // Beeline
         else if(name.toLowerCase().contains("beeline"))
         	return "*102#";
 		
-        /** Rostelecom **/
+        // Rostelecom
         else if(name.toLowerCase().contains("rostelecom"))
         	return "*123#";
 		
-		/** Tele2 **/
+		// Tele2
         else if(name.toLowerCase().contains("tele2"))
-        	return "*105#";	
-    		
-		else
+        	return "*105#";
+
+        // YOTA
+        else if(name.toLowerCase().contains("yota"))
+            return "*101#";
+
+        else
 			return "";
 	}
 }
