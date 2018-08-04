@@ -7,11 +7,11 @@ public class Oman {
 		int nr = Integer.parseInt(ID);
 		switch (nr) {
 
-			/** nawras **/
+			// nawras
 			case 42203:
 				return "*141*332#";
 			
-			/** FRiENDi mobile **/
+			// FRiENDi mobile
 			case 42202:
 				return "*122#";
 				
@@ -22,12 +22,12 @@ public class Oman {
 	
 	static private String getCodeByName(String name) {
 				
-		/** nawras **/
-		if (name.contains("nawras") || name.contains("Nawras") || name.contains("NAWRAS"))
+		// nawras
+		if (name.toLowerCase().contains("nawras"))
 			return "*141*332#";
 		
-		/** FRiENDi mobile **/
-		else if (name.contains("FRiENDi mobile") || name.contains("FRiENDi") || name.contains("friendi"))
+		// FRiENDi mobile
+		else if (name.toLowerCase().contains("friendi"))
 			return "*122#";
 
 		else

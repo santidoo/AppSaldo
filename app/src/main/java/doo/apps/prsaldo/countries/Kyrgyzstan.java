@@ -11,7 +11,11 @@ public class Kyrgyzstan {
 			case 43701:
 				return "*102#";
 
-			default:
+            // O!
+            case 43709:
+                return "*100#";
+
+            default:
 				return getCodeByName(name);
 		}
 	}
@@ -25,6 +29,10 @@ public class Kyrgyzstan {
         // MegaCom
         else if (name.toLowerCase().contains("megacom"))
             return "*500#";
+
+            // O!
+        else if (name.toLowerCase().contains("o!"))
+            return "*100#";
 
 		else
 			return "";

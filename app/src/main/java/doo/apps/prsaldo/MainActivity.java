@@ -12,6 +12,7 @@ import android.content.IntentFilter;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.LocalBroadcastManager;
@@ -52,9 +53,9 @@ public class MainActivity extends Activity {
 
 	private enum CountriesSupported {
 		ae, af, am, ao, ar, au, az, bb, bd, be, bg, bh, bj, bn, bo, br, by, bz, ca, cg, ch, cl, cm, cn, co, cr, cu, cz,
-		de, dk, doo, dz, ec, eg, es, et, fi, fr, ge, gb, gh, gm, gt, hk, hn, hr, ht, hu, id, ie, il, in, iq, ir, it,
-		jm, jo, ke, kh, kr, kw, kz, lb, lk, ly, ma, mh, mm, mo, mq, mw, mx, my, na, ncn, ng, ni, nl, no, np, nz, om,
-		pa, pe, ph, pk, pl, pr, pt, py, qa, ro, rs, ru, sa, sd, se, sg, so, sr, sv, sy, th, tm, tn, tr, tt,
+		de, dk, doo, dz, ec, eg, es, et, fi, fr, ge, gb, gh, gm, gq, gt, hk, hn, hr, ht, hu, id, ie, il, in, iq, ir, it,
+		jm, jo, ke, kg, kh, kr, kw, kz, lb, lk, ly, ma, mh, mm, mo, mq, mw, mx, my, na, ncn, ng, ni, nl, no, np, nz, om,
+		pa, pe, ph, pk, pl, pr, pt, py, qa, ro, rs, ru, sa, sd, se, sg, sk, so, sr, sv, sy, th, tj, tm, tn, tr, tt, tz,
 		ua, ug, uk, us, uy, uz, ve, vn, ye, za, zh, zw
 	}
 
@@ -71,19 +72,13 @@ public class MainActivity extends Activity {
 		chooser_title = getResources().getString(R.string.chooser_title);
         serviceID = getPackageName() + "/" + USSDService.class.getCanonicalName();
 
-        // WIP
-        // registerReceiver();
-
 		tlfnoMgr = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
 		if (tlfnoMgr.getSimState() == TelephonyManager.SIM_STATE_READY) {
 			String cc = tlfnoMgr.getSimCountryIso();
 			if (TextUtils.isEmpty(cc))
-				cc = "ncn"; // WHY this? Because some simcards do not have the country name on it..
+				cc = "ncn"; // Custom code for simcards that do not have country name specified
 
 			USSD_kod = getUSSDkod(cc);
-			//USSD_kod = "u*133#:*555#";
-            //USSD_kod = "";
-
 			if (TextUtils.isEmpty(USSD_kod)) {
 				// TODO: CREATE AN ALERTDIALOG AND OPEN EMAIL PROVIDER
 				showAlert();
@@ -96,50 +91,6 @@ public class MainActivity extends Activity {
 			finish();
 		}
 	}
-
-	// Our handler for received Intents.
-	// This will be called whenever an Intent with an action named "message" is broadcasted.
-	private BroadcastReceiver bReceiver = new BroadcastReceiver() {
-
-		@Override
-		public void onReceive(Context context, Intent intent) {
-			// Put here whatever you want your activity to do with the intent received
-			String message = intent.getStringExtra("ussd");
-			Log.d("santi", "BroadcastReceiver: " + message);
-
-			if (message.contentEquals("OK"))
-				finish();
-			else
-			    if (USSD_kod.startsWith("u")) {
-				    // Show alert to ask user for a second try
-				    showAlert2();
-			    }
-			    else {
-				    showAlert();
-			    }
-		}
-	};
-
-	private void registerReceiver() {
-		Log.d("santi", "registerReceiver");
-		LocalBroadcastManager.getInstance(this).registerReceiver(bReceiver, new IntentFilter("message"));
-	}
-
-	private void unregisterReceiver() {
-		Log.d("santi", "unregisterReceiver");
-		LocalBroadcastManager.getInstance(this).unregisterReceiver(bReceiver);
-	}
-
-/*	@Override
-	public void onWindowFocusChanged(boolean hasFocus) {
-		super.onWindowFocusChanged(hasFocus);
-		Log.d("santi", "onWindowFocusChanged");
-
-		if (! hasFocus) {
-			Intent closeDialog = new Intent(Intent.ACTION_CLOSE_SYSTEM_DIALOGS);
-			sendBroadcast(closeDialog);
-		}
-	}*/
 
 	private void checkPermissions(String permission, int code) {
 
@@ -167,13 +118,17 @@ public class MainActivity extends Activity {
 	private String getUSSDkod(String data) {
 
 		if (data.equals("do"))
-			data = "doo"; // WHY this? Because I can write ´do´ as constant...
+			data = "doo"; // Rename "do" to "doo" because "do" is a while-statement
 
 		String mccmnc = tlfnoMgr.getSimOperator();
 		String operatorName = tlfnoMgr.getSimOperatorName();
+        if (mccmnc.isEmpty()) {
+            mccmnc = tlfnoMgr.getNetworkOperatorName();
+            if (mccmnc.isEmpty())
+                mccmnc = "-1";
+        }
 
 		try {
-
 			CountriesSupported country = CountriesSupported.valueOf(data);
 			switch (country) {
 
@@ -303,6 +258,9 @@ public class MainActivity extends Activity {
                 case gm:
                     return Gambia.getCode(mccmnc, operatorName);
 
+                case gq:
+                    return Gambia.getCode(mccmnc, operatorName);
+
                 case gt:
                     return Guatemala.getCode(mccmnc, operatorName);
 
@@ -350,6 +308,9 @@ public class MainActivity extends Activity {
 
 				case ke:
 					return Kenya.getCode(mccmnc, operatorName);
+
+                case kg:
+                    return Kyrgyzstan.getCode(mccmnc, operatorName);
 
 				case kh:
 					return Cambodia.getCode(mccmnc, operatorName);
@@ -471,6 +432,9 @@ public class MainActivity extends Activity {
 				case sg:
 					return Singapore.getCode(mccmnc, operatorName);
 
+                case sk:
+                    return Slovakia.getCode(mccmnc, operatorName);
+
 				case so:
 					return Somalia.getCode(mccmnc, operatorName);
 
@@ -486,6 +450,9 @@ public class MainActivity extends Activity {
 				case th:
 					return Thailand.getCode(mccmnc, operatorName);
 
+                case tj:
+                    return Tajikistan.getCode(mccmnc, operatorName);
+
 				case tm:
 					return Turkmenistan.getCode(mccmnc, operatorName);
 
@@ -493,10 +460,13 @@ public class MainActivity extends Activity {
 					return Tunisia.getCode(mccmnc, operatorName);
 
 				case tr:
-					return Turquey.getCode(mccmnc, operatorName);
+					return Turkey.getCode(mccmnc, operatorName);
 
 				case tt:
 					return Trinidad.getCode(mccmnc, operatorName);
+
+                case tz:
+                    return Trinidad.getCode(mccmnc, operatorName);
 
 				case ua:
 					return Ukraine.getCode(mccmnc, operatorName);
@@ -575,38 +545,13 @@ public class MainActivity extends Activity {
 		alertDialog.show();
 	}
 
-	private void showAlert2() {
-		AlertDialog.Builder builder;
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
-			builder = new AlertDialog.Builder(this, android.R.style.Theme_Material_Dialog_Alert);
-		else
-			builder = new AlertDialog.Builder(this);
-
-		builder.setTitle(R.string.alert_title_try_again)
-				.setMessage(R.string.alert_message_try_again)
-				.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-					public void onClick(DialogInterface dialog, int which) {
-						// Try the second USSD code stored in the string
-						getBalance(USSD_kod.substring(USSD_kod.indexOf(":") + 1));
-					}
-				})
-				.setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
-					public void onClick(DialogInterface dialog, int which) {
-						unregisterReceiver();
-						finish();
-					}
-				})
-				.setIcon(android.R.drawable.ic_dialog_alert)
-				.show();
-	}
-
 	private void sendEmail() {
 
 		// Get the user versionName
 		String versionName = "-";
 		try {
 			PackageInfo pInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
-			versionName = pInfo.versionName;
+			versionName = pInfo.versionName + " (" + pInfo.versionCode + ")";
 		} catch (NameNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -641,33 +586,14 @@ public class MainActivity extends Activity {
 			else
 				sendSMS(smsNumber, smsText);
 
-            finish();
-
-		} else
-			// Special case when two USSD codes are stored in the same string -- WIP
-			if (kod.startsWith("u")) {
-
-				// Get the first USSD code
-				String ussd = kod.substring(1, kod.indexOf(":"));
-				ussd = "tel:" + ussd.replace("#", Uri.encode("#"));
-				Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse(ussd));
-
-				if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED)
-					return;
-
-				startActivity(intent);
-			}
-			else { // NORMAL CASE
-
-				Log.d("santi", "calling: " + kod);
-				String ussd = "tel:" + kod.replace("#", Uri.encode("#"));
-				Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse(ussd));
-				startActivity(intent);
-			}
-
-        Log.d("santi", "isAccessibilityEnabled: " + isAccessibilityEnabled(MainActivity.this, serviceID));
-        if (!isAccessibilityEnabled(MainActivity.this, serviceID))
-            finish();
+		} else {
+            String ussd = "tel:" + kod.replace("#", Uri.encode("#"));
+            Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse(ussd));
+            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED)
+                return;
+            startActivity(intent);
+        }
+        finish();
 	}
 
 	public final void sendEmptySMS(String smsNumber) {
@@ -686,7 +612,7 @@ public class MainActivity extends Activity {
 		Toast.makeText(MainActivity.this, "SMS balance inquiry has been sent", Toast.LENGTH_SHORT).show();
 	}
 
-	public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+	public void onRequestPermissionsResult(int requestCode, @NonNull String permissions[], @NonNull int[] grantResults) {
 		if (requestCode == PERMISSIONS_CALL_PHONE) {
 			// If request is cancelled, the result arrays are empty.
 			if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED)
@@ -709,21 +635,4 @@ public class MainActivity extends Activity {
 		}
 	}
 
-    public static boolean isAccessibilityEnabled(Context context, String id) {
-
-        AccessibilityManager am = (AccessibilityManager) context.getSystemService(Context.ACCESSIBILITY_SERVICE);
-        List<AccessibilityServiceInfo> runningServices = am.getEnabledAccessibilityServiceList(AccessibilityEvent.TYPES_ALL_MASK);
-        for (AccessibilityServiceInfo service : runningServices) {
-            if (id.equals(service.getId()))
-                return true;
-        }
-        return false;
-    }
-
-    @Override
-    public void finish() {
-        unregisterReceiver();
-        Log.d("santi", "finish");
-        super.finish();
-    }
 }

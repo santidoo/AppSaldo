@@ -7,40 +7,48 @@ public class Canada {
 		int nr = Integer.parseInt(ID);
 		switch (nr) {
 			
-			/** Telus **/
+			// Telus
 			case 302220:
 				return "#123";
 				
-			/** Bell Mobility **/
+			// Bell Mobility
 			case 302610:
 				return "#321";
 				
-			/** Wind **/
+			// Wind
 			case 302490:
 				return "*123#";
-				
-			default:
+
+            // chatr | *100# or call *611
+            case 302720:
+                return "*225#";
+
+            default:
 				return getCodeByName(name);
 		}
 	}
 	
 	static private String getCodeByName(String name) {
 				
-		/** Rogers Wireless **/
-		if (name.contains("ROGERS") || name.contains("ogers"))
+		// Rogers Wireless
+		if (name.toLowerCase().contains("rogers"))
 			return "*225#";
 		
-		/** Bell Mobility **/
-		else if (name.contains("BELL") || name.contains("ell"))
+		// Bell Mobility
+		else if (name.toLowerCase().contains("bell"))
 			return "#321";
 		
-		/** telus Mobility **/
-		else if (name.contains("TELUS") || name.contains("elus"))
+		// telus Mobility
+		else if (name.toLowerCase().contains("telus"))
 			return "#123";
 		
-		/** Wind **/
-		else if (name.contains("Wind") || name.contains("WIND") || name.contains("wind"))
+		// Wind
+		else if (name.toLowerCase().contains("wind"))
 			return "*123#";
+
+        // chatr | *100# or call *611
+        else if (name.toLowerCase().contains("chatr"))
+            return "*225#";
 
 		else
 			return "";

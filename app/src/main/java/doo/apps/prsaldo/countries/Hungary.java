@@ -7,18 +7,24 @@ public class Hungary {
 		int nr = Integer.parseInt(ID);
 		switch (nr) {
 
-			default:
+            // Telekom HU
+            case 21630:
+                return "*102#";
+
+            default:
 				return getCodeByName(name);
 		}
 	}
 	
 	static private String getCodeByName(String name) {
 				
-		/** T-Mobile Domino **/
-		if (name.contains("DOMINO") || name.contains("omino") || name.contains("T-") || name.contains("t-"))
+		// T-Mobile Domino
+		if (name.toLowerCase().contains("domino") || name.contains("t-"))
 			return "*102#";
-		
-		/** T-Mobile, Telenor and Vodafone. **/
+
+        // Telekom a.k.a. Magyar Telekom (formerly T-Mobile/Westel)
+        else if (name.toLowerCase().contains("telekom"))
+            return "*102#";
 
 		else
 			return "";

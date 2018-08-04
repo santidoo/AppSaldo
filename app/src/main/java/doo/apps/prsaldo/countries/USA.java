@@ -11,7 +11,7 @@ public class USA {
             case 31000:
                 return "#225";
 
-                // T-Mobile
+            // T-Mobile
 			case 310026:
 				return "#999#";
 				
@@ -38,14 +38,14 @@ public class USA {
 			// Iowa Wireless (i wireless)
 			case 310770:
 				return "#225";
-				
-			// MetroPCS
+
+            // MetroPCS
 			case 311660:
 				return "*99";
 			
-			// Virgin Mobile
+			// Assurance Wireless - Virgin Mobile - Sprint Spectrum / Sprintcom
 			case 311490:
-				return "";
+				return "s225:BAL";
 
 			// Verizon Wireless
 			case 311480:
@@ -75,8 +75,12 @@ public class USA {
 			// Kolbi ICE | s1150:
 			case 71201:
 				return "*1150#";
-				
-			default:
+
+			// Personal ARGENTINA
+            case 72234:
+                return "*150#";
+
+            default:
 				return getCodeByName(name);
 		}
 	}
@@ -123,9 +127,13 @@ public class USA {
     	else if(name.toLowerCase().contains("i-wireless"))
     		return "#225";
 
-        // Virgin Mobile
+        // Virgin Mobile | 225 or s225:BAL
         else if(name.toLowerCase().contains("virgin"))
-            return "";
+            return "s225:BAL";
+
+        // Assurance Wireless | NO CODE !!!
+        else if (name.toLowerCase().contains("assurance"))
+            return "s225:BAL";
 
         // Sprint USA
         else if(name.toLowerCase().contains("sprint"))
@@ -151,6 +159,10 @@ public class USA {
 		// Kolbi ICE
 		else if (name.toLowerCase().contains("kolbi") || name.toLowerCase().contains("ice"))
 			return "*1150#";
+
+        // Personal
+        else if (name.toLowerCase().contains("personal"))
+            return "*150#";
 		
 		else
 			return "";

@@ -15,6 +15,14 @@ public class Somalia {
             case 63701:
                 return "*122#";
 
+            // SOMNET
+            case 63720:
+                return "*132#";
+
+            // Somtel - Mubarak
+            case 63771:
+                return "*142#";
+
             default:
 				return getCodeByName(name);
 		}
@@ -29,6 +37,14 @@ public class Somalia {
         // telesom
         else if (name.toLowerCase().contains("telesom"))
             return "*122#";
+
+        // SOMNET | call 132
+        else if (name.toLowerCase().contains("somnet"))
+            return "*132#";
+
+        // Somtel - Mubarak
+        else if (name.toLowerCase().contains("mubarak") || name.toLowerCase().contains("somtel"))
+            return "*142#";
 
 		else
 			return "";

@@ -1,16 +1,16 @@
 package doo.apps.prsaldo.countries;
 
-public class Cuba {
+public class Tajikistan {
 
 	static public String getCode(String ID, String name) {
 
 		int nr = Integer.parseInt(ID);
 		switch (nr) {
-			
-			// Cubacell
-			case 36801:
-				return "*222#";
 
+			// Beeline TJ
+            case 43605:
+                return "*114#";
+				
 			default:
 				return getCodeByName(name);
 		}
@@ -18,11 +18,12 @@ public class Cuba {
 	
 	static private String getCodeByName(String name) {
 				
-		// Cubacell
-		if (name.toLowerCase().contains("cubacel"))
-			return "*222#";
+		// Beeline TJ | *114# data balance
+		if (name.toLowerCase().contains("beeline"))
+			return "*114#";
 
 		else
 			return "";
 	}
 }
+

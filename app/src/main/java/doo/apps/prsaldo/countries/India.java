@@ -234,11 +234,15 @@ public class India {
 			// BSNL
 			case 40453:
 				return "*123#";
+
+            // BSNL, Andhra Pradesh
+            case 40473:
+                return "*123#";
 			
 			// BSNL | Vodafone | HESL (Chennai)
 			case 40484:
 				return "*141#";
-			
+
 			// DOLPHIN | mtnl trump
 			case 40469:
 				return "*444#";
@@ -414,6 +418,7 @@ public class India {
 // https://www.komparify.com/blogs/index.php/balance.html
 // http://thezerolife.com/995/balance-checking-codes-for-all-sim-cards-mobile-services-in-india
 // BSNL: http://www.thinkcept.com/blog/telecom/bsnl-how-to-check-gprs2g3g-data-balance-and-validity/
+// BSNL: https://www.imobileandroid.com/bsnl-ussd-codes-check-balance-offer-plan-alert/
 
 // Jio 4G: Check your main balance: *333# or message to 55333 with text MBAL
 // https://www.gizbot.com/telecom/features/reliance-jio-ussd-codes-check-balance-4g-data-usage-number-news/articlecontent-pf65686-035712.html

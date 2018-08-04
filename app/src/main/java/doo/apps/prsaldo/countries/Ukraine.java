@@ -18,6 +18,10 @@ public class Ukraine {
             // Lifecell
             case 25506:
                 return "*111#";
+
+            // Phoenix
+            case 25599:
+                return "*101#";
 				
 			default:
 				return getCodeByName(name);
@@ -37,6 +41,10 @@ public class Ukraine {
         // Lifecell
         else if (name.toLowerCase().contains("lifecell"))
             return "*111#";
+
+        // Phoenix
+        else if (name.toLowerCase().contains("phoenix"))
+            return "*101#";
 
 		else
 			return "";

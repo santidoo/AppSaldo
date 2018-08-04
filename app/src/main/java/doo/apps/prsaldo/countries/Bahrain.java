@@ -7,20 +7,28 @@ public class Bahrain {
 		int nr = Integer.parseInt(ID);
 		switch (nr) {
 			
-			/** zain BH **/
+			// zain BH
 			case 42602:
 				return "*142#";
 
-			default:
+            // VIVA
+            case 42604:
+                return "*101#";
+
+            default:
 				return getCodeByName(name);
 		}
 	}
 	
 	static private String getCodeByName(String name) {
 				
-		/** zain BH **/ // "*124#" / Dial 111 / *500# (postpaid)
-		if (name.contains("zain BH") || name.contains("ZAIN") || name.contains("zain") || name.contains("Zain"))
+		// zain BH | "*124#" or Dial 111 or *500# (postpaid)
+		if (name.toLowerCase().contains("zain"))
 			return "*142#";
+
+        // VIVA
+        else if (name.toLowerCase().contains("viva"))
+            return "*101#";
 
 		else
 			return "";

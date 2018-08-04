@@ -1,23 +1,32 @@
 apply plugin: 'com.android.application'
 
+allprojects {
+    repositories {
+        jcenter()
+        google()
+    }
+}
+
 android {
-    compileSdkVersion 23
-    buildToolsVersion '26'
+    compileSdkVersion 26
+    buildToolsVersion "27.0.3"
 
     defaultConfig {
         applicationId "doo.apps.saldo"
         minSdkVersion 14
-        targetSdkVersion 23
+        targetSdkVersion 26
     }
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled false // Enables code shrinking for the release build type.
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:23.0.0'
+    //compile 'com.android.support:support-v4:23.0.0'
+    //compile 'com.android.support:appcompat-v7:27.1.1'
+    api 'com.android.support:appcompat-v7:26.1.0'
 }
